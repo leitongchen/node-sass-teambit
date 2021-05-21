@@ -1,0 +1,10 @@
+@mixin reset-list {
+    margin: 0;
+    list-style: none;
+}
+
+@mixin align-item-center {
+    display: flex;
+    align-items: center;
+}
+
