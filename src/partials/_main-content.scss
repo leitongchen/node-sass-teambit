@@ -1,0 +1,16 @@
+.btns-container {
+    @include align-item-center;
+
+    margin-top: $spacing*2;
+    margin-bottom: $spacing/2;
+}
+
+.hero {
+
+
+    img.hero-img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: contain;
+    }
+}
