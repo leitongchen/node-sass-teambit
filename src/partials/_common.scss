@@ -49,21 +49,22 @@ ul {
     @include reset-list;
 
     li {
+        transition: background-color $transition_duration;
         
-        a {
-            @include reset-link;
-            transition: background-color $transition_duration;
-            
-            font-size: $font_size/1.2;
-            font-weight: 600;
-        }
-
         &:hover {
             background-color: $secondary_color;
 
             a {
                 color: white;
             }
+        }
+
+        a {
+            @include reset-link;
+            transition: background-color $transition_duration;
+            
+            font-size: $font_size/1.2;
+            font-weight: 600;
         }
     }
 }
@@ -83,6 +84,7 @@ button {
         background-color: $btn_color;
         color: white;
         padding: 5px 15px;
+        transition: background-color $transition_duration;
 
         &:hover {
             background-color: $secondary_color;
@@ -91,6 +93,7 @@ button {
     &.btn-secondary {
         color: $primary_color;
         border: 2px solid $btn_color;
+        transition: background-color $transition_duration;
 
         &:hover {
             background-color: lighten($btn_color, 40%);
