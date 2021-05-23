@@ -25,11 +25,6 @@ section {
             margin-bottom: $spacing;
         }
     }
-
-    &#sect-2 {
-        padding-bottom: $spacing*4;
-    }
-
     .main-img {
         width: 30%;
         margin-left: auto;
@@ -42,10 +37,29 @@ section {
     h3 {
         margin-bottom: $spacing*4;
     }
+
+    p + a {
+        display: block;
+        margin-top: $spacing*2;
+        margin-bottom: $spacing;
+        color: $secondary_color;
+
+        font-weight: 600;
+        font-size: $font_size/1.3;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     &#sect-1,
     &#sect-2,
     &#sect-7  {
         background-color: lighten($primary_color, 55%);
+    }
+
+    &#sect-2 {
+        padding-bottom: $spacing*4;
     }
 
     &#sect-7 {

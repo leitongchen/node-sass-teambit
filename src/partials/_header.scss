@@ -22,10 +22,21 @@ header {
 }
 
 .nav-container {
+
+    display: flex;
+
     ul {
         @include align-item-center;
-    }
 
+        li {
+            display: inline-block;
+
+            a {
+                padding: 10px;
+            }
+        }
+    }
+    
     // sign in button header
     button {
         

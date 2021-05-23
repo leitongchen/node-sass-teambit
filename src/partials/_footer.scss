@@ -1,0 +1,42 @@
+footer {
+    padding: ($spacing*4) 0;
+}
+
+footer .row {
+
+    display: flex;
+    justify-content: space-between;
+
+    .logo-footer-container {
+
+        display: flex;
+        width: 40%;
+        flex-basis: 1;
+
+        .logo-footer {
+            max-height: 40px;
+            margin-right: $spacing;
+        }
+        
+    }
+    ul {
+
+        width: calc(60% / 5);
+
+        h5 {
+            margin-bottom: $spacing*2;
+            margin-left: 10px;
+            text-transform: capitalize;
+
+        }
+        li {
+            line-height: $line_height*1.2;
+            font-size: $font_size/1.4;
+
+            a {
+                padding: 5px 10px;
+            }
+        }
+    }
+
+}
