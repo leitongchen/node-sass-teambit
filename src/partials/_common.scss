@@ -50,7 +50,7 @@ ul {
 
     li {
         transition: background-color $transition_duration;
-        
+
         &:hover {
             background-color: $secondary_color;
 
@@ -104,6 +104,7 @@ button {
     img.logo-img {
         width: 20px;
         height: 20px;
+        margin-right: $spacing/3;
     }
 }
 

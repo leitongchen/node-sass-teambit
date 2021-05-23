@@ -97,6 +97,7 @@ button.btn-secondary:hover {
 button img.logo-img {
   width: 20px;
   height: 20px;
+  margin-right: 4.6666666667px;
 }
 
 a {
@@ -193,9 +194,6 @@ header {
 .nav-container button {
   padding: 5px 10px;
   margin-left: 7px;
-}
-.nav-container button img {
-  margin-right: 4.6666666667px;
 }
 
 .btns-container {
