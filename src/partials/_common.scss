@@ -15,15 +15,34 @@ body {
 }
 
 section {
-    padding: ($spacing*4) 0;
+    padding-top: ($spacing*4);
 }
 
 .row {
     display: flex;
 
-    [class^="col-"] {
-        width: 50%;
+    img.small-img {
+        width: 40%;
     }
+    .col-6 {
+        width: 50%;
+
+        img.section-img {
+            width: 100%;
+        }
+    }
+    .col-4 {
+        width: calc(100% / 3);
+
+        img.section-img {
+            width: 80%;
+        }
+    }
+    .col-2 {
+        width: calc(100% / 6);
+    }
+    
+    
 }
 
 ul {
@@ -33,8 +52,7 @@ ul {
         display: inline-block;
 
         a {
-            color: $primary_color;
-            text-decoration: none;
+            @include reset-link;
             transition: background-color $transition_duration;
             
             font-size: $font_size/1.2;
@@ -76,16 +94,17 @@ button {
         }        
     }
    
-
     // Logo img inside button
-    img {
+    img.logo-img {
         width: 20px;
         height: 20px;
     }
 }
 
 a {
+    @include reset-link;
     display: inline-block;
+    font-size: $font_size;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -98,15 +117,32 @@ h1 {
     line-height: $line_height * 1.1;
 }
 
+h3 {
+    font-size: $font_size*1.2;
+}
+
+h3.nospace-after {
+    margin-bottom: 0;
+}
+
 p {
     font-size: $font_size;
     line-height: $line_height;
 }
 
-span.small-text {
+span.small-text,
+p.small-text {
     font-size: $font_size/1.3;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .spacing-lr {
     margin: $spacing/2;
+}
+
+.divider {
+    border-bottom: 1px solid $primary_color;
 }
