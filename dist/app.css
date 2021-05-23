@@ -212,6 +212,36 @@ section .main-img img {
 section h3 {
   margin-bottom: 56px;
 }
-section#sect-1, section#sect-2 {
+section#sect-1, section#sect-2, section#sect-7 {
   background-color: #d2d5fe;
+}
+section#sect-7 {
+  padding-bottom: 56px;
+}
+section#sect-7 h1 {
+  margin-bottom: 56px;
+}
+section#sect-7 .statement-container {
+  width: 70%;
+  margin: auto;
+  padding: 14px;
+  background-color: white;
+  border: 1px solid #0413b3;
+  border-radius: 10px;
+}
+section#sect-7 .statement-container img {
+  width: 40px;
+  height: 40px;
+  margin-right: 14px;
+}
+section#sect-7 .statement-container .quote-author {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
+section#sect-7 p {
+  font-size: 10.7692307692px;
+}
+section#sect-7 .btns-container {
+  justify-content: center;
 }
